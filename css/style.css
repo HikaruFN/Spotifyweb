@@ -14,6 +14,16 @@
     width: 100%;
     height: 100%;
 }
+.inner-container-flex-column{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+.hidden{
+    display: none;
+}
 ul{
     list-style: none;
     padding: 10px 0;
@@ -134,5 +144,11 @@ nav a:hover::before{
 
 /*Media Queries*/
 @media only screen and (max-width: 425px){
-    
+    .logo{
+        display: none;
+    }
+    .logo-hidden{
+        display: contents;
+    }
+
 }
