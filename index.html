@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/style.css">
     <title>Spotify WebApp</title>
@@ -15,9 +17,53 @@
         <!--MAIN-->
         <main>
             <!--Side Nav-->
-            <div class="side-nav-container">
-                Side nav
-            </div>
+            <nav class="side-nav-container">
+                <div class="wrapper-side-nav"> <!--Gestisce spaziature elementi-->
+                    <div class="container-flex-column"> <!--Conferisce Display Flex Column-->
+                        <div class="side-nav-content-container container-flex-column"> <!--Contiene da Logo a Playlist-->
+                            <!--Logo-->
+                            <div class="logo">
+                                <img src="img/logo.svg" alt="logo">
+                            </div>
+                            <!--Menu-->
+                            <div class="menu">
+                                <ul>
+                                    <li><a href="#"><img src="img/home.svg" alt="home"> Home</a></li>
+                                    <li><a href="#"><img src="img/search.svg" alt="search"> Cerca</a></li>
+                                    <li><a href="#"><img src="img/libreria.svg" alt="libreria"> La Tue Libreria</a></li>
+                                </ul>
+                            </div>
+                            <!--Playlist-->
+                            <div class="playlist">
+                                <h4>PLAYLIST</h4>
+                                <ul>
+                                    <li><a href="#"><span class="plus"><i class="fas fa-plus-square"></span></i>Crea Playlist</a></li>
+                                    <li><a href="#">Nome Playlist</a></li>
+                                    <li><a href="#">Nome Playlist</a></li>
+                                    <li><a href="#">Nome Playlist</a></li>
+                                    <li><a href="#">Nome Playlist</a></li>
+                                    <li><a href="#">Nome Playlist</a></li>
+                                    <li><a href="#">Nome Playlist</a></li>
+                                    <li><a href="#">Nome Playlist</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="side-nav-content-container"> <!--Contiene Download e Profilo utente-->
+                            <!--Download--> 
+                            <div class="download">
+                                <a href="#"><i class="fas fa-arrow-circle-down"></i> Installa app</a>
+                            </div>
+                            <!--Profilo Utente-->
+                            <div class="user-container">
+                                <div class="user-icon-container">
+                                    <img src="img/profile.svg" alt="profile">
+                                </div>
+                                <h4>John Doe</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>     
+            </nav>
             <!--End Side Nav-->
             <!--Main Content-->
             <div class="main-container">
