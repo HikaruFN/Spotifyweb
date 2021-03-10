@@ -1,0 +1,54 @@
+/*RESET*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*COMMON*/
+
+
+/*Wrapper-app*/
+.wrapper-app{
+    height: 100vh;
+    width: 100%;
+
+    /*TEST*/
+    background-color: burlywood;
+}
+
+
+/*MAIN*/
+main{
+    height: calc( 100% - 100px);
+}
+/*Side Nav*/
+.side-nav-container{
+    float: left;
+    width: 250px;
+    height: 100%;
+
+    /*TEST*/
+    background-color: red;
+}
+/*Main Container*/
+.main-container{
+    float: left;
+    width: calc( 100% - 250px );
+    height: 100%;
+
+    /*TEST*/
+    background-color: blue;
+}
+
+
+/*FOOTER*/
+/*Footer Contaier*/
+.footer-container{
+    height: 100px;
+    width: 100%;
+
+    /*TEST*/
+    background-color: green;
+}
