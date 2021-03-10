@@ -142,6 +142,11 @@ nav a:hover::before{
 
 /*Media Queries*/
 @media only screen and (max-width: 425px){
+.main-container{
+    float: left;
+    width: calc( 100% - 50px );
+    height: 100%;
+}    
 .hidden-xs{
     display: none;
 }
@@ -172,3 +177,10 @@ nav a:hover::before{
 }
 
 }
+
+
+
+
+
+
+
