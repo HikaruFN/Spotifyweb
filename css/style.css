@@ -19,6 +19,16 @@
     width: 100%;
     height: 100%;
 }
+.container-flex-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.inline{
+    display: inline-block;
+}
 .hidden{
     display: none;
 }
@@ -80,8 +90,18 @@ main{
 .playlist{
     height: 100%;
     min-height: 100px;
-    overflow-y: auto;
+    overflow: hidden;
+    min-height: 55px;
     padding-top: 20px;
+}
+.new-playlist{
+    height: 70px;
+}
+.scroll-list{
+    list-style: none;
+    padding: 10px 0;
+    height: calc( 100% - 70px );
+    overflow-y: auto;
 }
 .plus{
     font-size: 40px;
@@ -134,9 +154,33 @@ nav a:hover::before{
 .footer-container{
     height: 100px;
     width: 100%;
-
-    /*TEST*/
-    background-color: green;
+    background-color: #282828;
+}
+.wrapper-footer{
+    width: 100%;
+    height: 100%;
+    padding: 10px 10px;
+}
+/*Brano Corrente*/
+/*Copertina/Nome Brano/Nome Album*/
+.img-copertina img{
+    width: 40px;
+    height: 40px;
+}
+.song{
+    margin-left: 10px;
+}
+.album-name h5{
+    color: white;
+}
+.song-name{
+    color: #6a6a6a;
+    font-size: 10px;
+}
+/*Like e Salva*/
+.song-save-buttons{
+    font-size: 30px;
+    vertical-align: middle;
 }
 
 

@@ -48,17 +48,25 @@
                             </div>
                             <!--Playlist-->
                             <div class="playlist hidden-xs">
-                                <h4>PLAYLIST</h4>
-                                <ul>
-                                    <li><a href="#"><span class="plus"><i class="fas fa-plus-square"></span></i>Crea Playlist</a></li>
-                                    <li><a href="#">Nome Playlist</a></li>
-                                    <li><a href="#">Nome Playlist</a></li>
-                                    <li><a href="#">Nome Playlist</a></li>
-                                    <li><a href="#">Nome Playlist</a></li>
-                                    <li><a href="#">Nome Playlist</a></li>
-                                    <li><a href="#">Nome Playlist</a></li>
-                                    <li><a href="#">Nome Playlist</a></li>
-                                </ul>
+                                <div class="new-playlist">
+                                    <div>
+                                        <h4>PLAYLIST</h4>
+                                    </div>
+                                    <div>
+                                        <a href="#"><span class="plus"><i class="fas fa-plus-square"></span></i>Crea Playlist</a>
+                                    </div>
+                                </div>
+                                <div class="scroll-list">
+                                    <ul>
+                                        <li><a href="#">Nome Playlist</a></li>
+                                        <li><a href="#">Nome Playlist</a></li>
+                                        <li><a href="#">Nome Playlist</a></li>
+                                        <li><a href="#">Nome Playlist</a></li>
+                                        <li><a href="#">Nome Playlist</a></li>
+                                        <li><a href="#">Nome Playlist</a></li>
+                                        <li><a href="#">Nome Playlist</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                         
@@ -100,7 +108,43 @@
         <!--FOOTER-->
         <footer>
             <div class="footer-container">
-                Footer
+                <div class="wrapper-footer"> <!--Gestisce spaziature Footer-->
+                    <div class="container-flex-row"> <!--Conferisce Display Flex Column-->
+                        <!--Brano Corrente-->
+                        <div class="current-song">
+                            <!--Copertina/Nome Brano/Nome Album-->
+                            <div class="info-song inline">
+                                <div class="img-copertina inline">
+                                    <img src="img/sinister.jpeg" alt="sinister">
+                                </div>
+                                <div class="song inline">
+                                    <div class="album-name">
+                                        <h5>sinister</h5>
+                                    </div>
+                                    <div class="song-name">
+                                        <span>Brano Nome</span>
+                                    </div>
+                                </div>                                
+                            </div>
+                            <div class="song-save inline">
+                                <!--Like e Salva-->
+                                <div class="song-save-buttons">
+                                    <a href="#"><i class="far fa-heart"></i></a>
+                                    <a href="#"><i class="far fa-folder"></i></a> 
+                                </div>     
+                            </div>     
+                       </div>
+                        <!--Pannello Di Controllo Brano-->
+                        <div class="song-ctrl-pannel">
+                            pannelo di controllo
+                        </div>
+                        <!--Pannello Di Controllo Utente-->
+                        <div class="user-ctrl-pannel">
+                            pannelo controllo utente
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </footer>
         <!--END FOOTER-->
