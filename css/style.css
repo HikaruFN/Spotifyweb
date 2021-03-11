@@ -88,6 +88,8 @@ main li{
     width: calc( 100% - 250px );
     height: 100%;
     background-color: #141922;
+    overflow: hidden;
+    overflow-y: auto;
 }
 .main-content-wrapper{
     padding: 10px 20px;
@@ -213,21 +215,24 @@ margin-bottom: 5px;
 .recently-played{
     margin: 20px 0;
 }
+.recently-played-text{
+    padding-bottom: 10px;
+}
 .recently-played-container-flex-row{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: nowrap;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 }
 .recently-played-content-box{
     width: calc( 100% / 6 );
 }
 .recently-played-content-box img{
     width: 100%;
-    padding: 10px;
+    padding: 10px 5px;
 }
 .recently-played-content-box-text{
     text-align: center;
+    height: 100px;
 }
 .album-name h4{
     font-size: 15px;
@@ -364,7 +369,10 @@ a img{
 nav a:hover::before{
     display: none;
 }
-
+/*Ascoltati Di recente*/
+.recently-played-content-box{
+    width: calc( 100% / 2 );
+}
 }
 
 @media only screen and (min-width: 426px){
@@ -372,6 +380,20 @@ nav a:hover::before{
     display: none;
 }
 
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px){
+/*Ascoltati Di recente*/
+.recently-played-content-box{
+    width: calc( 100% / 2 );
+}       
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+/*Ascoltati Di recente*/
+.recently-played-content-box{
+    width: calc( 100% / 4 );
+} 
 }
 
 
