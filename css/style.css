@@ -80,9 +80,10 @@ main li{
     float: left;
     width: calc( 100% - 250px );
     height: 100%;
-
-    /*TEST*/
-    background-color: blue;
+    background-color: #141922;
+}
+.main-content-wrapper{
+    padding: 10px 10px;
 }
 /*Side Nav*/
 .side-nav-container{
@@ -161,15 +162,15 @@ nav a:hover::before{
     height: 100%;
 }
 .upgrade-button-container{
-    border: 1px solid white;
-    padding: 10px 10px;
+    border: 1px solid #fefefe;
+    padding: 7px 10px;
     margin-right: 5px;
     border-radius: 20px;
-    width: 200px;
+    width: 250px;
     text-align: center;
 }  
 .upgrade-button-container h4{
-    color: white;
+    color: #fefefe;
 }
 .inner-container-upgrade-flex-row{
     display: flex;
@@ -178,6 +179,25 @@ nav a:hover::before{
 }
 .button-text{
     width: 100%;
+}
+/*Main content principale*/
+.container-flex-column-main-content{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+.main-menu{
+    width: 60%;
+}
+.inner-container-main-menu-flex-row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.inner-container-main-menu-flex-row li{
+    margin: 10px;
 }
 
 
@@ -245,7 +265,6 @@ nav a:hover::before{
     height: 3px;
     background-color: #5a5a5a;
     border-radius: 10px;
-    vertical-align: middle;
 }
 .inner-song-time-bar{
     width: 20%;
