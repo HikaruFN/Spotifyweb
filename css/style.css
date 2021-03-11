@@ -4,6 +4,8 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
 /*COMMON*/
 .container-flex-column{
     display: flex;
@@ -16,8 +18,6 @@
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    width: auto; /*Valori widht e height inner flex da togliere?*/
-    height: auto;
 }
 .container-flex-row{
     display: flex;
@@ -30,8 +30,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: auto;
-    height: 100%;
 }
 .inline-block{
     display: inline-block;
@@ -39,9 +37,6 @@
 ul{
     list-style: none;
     padding: 10px 0;
-}
-li{
-    color: #6b6b6b;
 }
 a img{
     width: 10%;
@@ -58,7 +53,7 @@ h4{
 }
 
 
-/*Wrapper-app*/
+/*WRAPPER-APP*/
 .wrapper-app{
     height: 100vh;
     width: 100%;
@@ -76,6 +71,17 @@ main{
 }
 main li{
     padding: 5px 0;
+    color: #6b6b6b
+}
+
+/*Main Container*/
+.main-container{
+    float: left;
+    width: calc( 100% - 250px );
+    height: 100%;
+
+    /*TEST*/
+    background-color: blue;
 }
 /*Side Nav*/
 .side-nav-container{
@@ -104,8 +110,6 @@ main li{
     height: 70px;
 }
 .scroll-list{
-    list-style: none;
-    padding: 10px 0;
     height: calc( 100% - 70px );
     overflow-y: auto;
 }
@@ -144,18 +148,10 @@ nav a:hover::before{
     border-left: 2px solid #adff2f;
     margin-right: 10px;
 }
-/*Main Container*/
-.main-container{
-    float: left;
-    width: calc( 100% - 250px );
-    height: 100%;
-
-    /*TEST*/
-    background-color: blue;
-}
 
 
 /*FOOTER*/
+
 /*Footer Contaier*/
 .footer-container{
     height: 100px;
