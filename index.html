@@ -17,7 +17,7 @@
         <!--MAIN-->
         <main>
             <!--Side Nav-->
-            <nav class="side-nav-container">
+            <nav class="side-nav-container"> <!--Applica colore background-->
                 <div class="wrapper-side-nav"> <!--Gestisce spaziature Nav-->
                     <div class="container-flex-column"> <!--Conferisce Display Flex Column-->
                         <!--Contiene da Logo a Playlist-->
@@ -107,17 +107,17 @@
 
         <!--FOOTER-->
         <footer>
-            <div class="footer-container">
+            <div class="footer-container"> <!--Applica colore background-->
                 <div class="wrapper-footer"> <!--Gestisce spaziature Footer-->
-                    <div class="container-flex-row"> <!--Conferisce Display Flex Column-->
+                    <div class="container-flex-row"> <!--Conferisce Display Flex row-->
                         <!--Brano Corrente-->
                         <div class="current-song inner-container-flex-row">
                             <!--Copertina/Nome Brano/Nome Album-->
                             <div class="info-song">
-                                <div class="img-copertina inline">
+                                <div class="img-copertina inline-block">
                                     <img src="img/sinister.jpeg" alt="sinister">
                                 </div>
-                                <div class="song inline">
+                                <div class="song inline-block">
                                     <div class="album-name">
                                         <h5>sinister</h5>
                                     </div>
@@ -126,8 +126,8 @@
                                     </div>
                                 </div>                                
                             </div>
+                            <!--Like e Salva-->
                             <div class="song-save">
-                                <!--Like e Salva-->
                                 <div class="song-save-buttons">
                                     <a href="#"><i class="far fa-heart"></i></a>
                                     <a href="#"><i class="far fa-folder"></i></a> 
@@ -135,12 +135,39 @@
                             </div>     
                        </div>
                         <!--Pannello Di Controllo Brano-->
-                        <div class="song-ctrl-pannel">
-                            pannelo di controllo
+                        <div class="song-ctrl-pannel inner-container-flex-column">
+                            <div class="song-action-pannel">
+                                <div>
+                                    <ul class="inner-container-flex-row">
+                                        <li><a href="#"><i class="fas fa-random"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-step-backward"></i></a></li>
+                                        <li><a id="play-button" href="#"><i class="far fa-play-circle"></i></a></li> <!--Id per applicare font size-->
+                                        <li><a href="#"><i class="fas fa-step-forward"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-redo"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="song-time-bar-container">
+                                <div>
+                                    <span class="song-time">0:25</span>
+                                    <div class="song-time-bar inline-block"> <!--Barra riproduzione principale-->
+                                        <div class="inner-song-time-bar"> <!--Barra riproduzione interna-->
+                                        </div>
+                                    </div>
+                                    <span class="song-time">0:25</span>
+                                </div>
+                            </div>
                         </div>
                         <!--Pannello Di Controllo Utente-->
-                        <div class="user-ctrl-pannel">
-                            pannelo controllo utente
+                        <div class="user-ctrl-pannel inner-container-flex-row">
+                            <div class="user-action-pannel">
+                                <ul class="inner-container-flex-row">
+                                    <li><a href="#"><i class="fas fa-list-ul"></i></a></li>
+                                    <li><a href="#"><i class="fas fa-desktop"></i></a></li>
+                                    <li><a href="#"><i class="fas fa-volume-up"></i></a></li>
+                                </ul>
+                            </div>
+                            
                         </div>
                     </div>
 
