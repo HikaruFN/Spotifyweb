@@ -47,6 +47,13 @@ a{
     color: #767676;
     font-size: 13px;
 }
+h2{
+    color: white;
+    font-size: 20px;
+}
+h3{
+    color: white;
+}
 h4{
     color: white;
 }
@@ -83,7 +90,7 @@ main li{
     background-color: #141922;
 }
 .main-content-wrapper{
-    padding: 10px 10px;
+    padding: 10px 20px;
 }
 /*Side Nav*/
 .side-nav-container{
@@ -181,23 +188,57 @@ nav a:hover::before{
     width: 100%;
 }
 /*Main content principale*/
-.container-flex-column-main-content{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    
+/*Main Menu*/
+.main-menu-container{
+margin-bottom: 5px;
 }
-.main-menu{
-    width: 60%;
-}
-.inner-container-main-menu-flex-row{
+.container-main-menu-flex-row{
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
 }
-.inner-container-main-menu-flex-row li{
-    margin: 10px;
+.container-main-menu-flex-row ul li{
+    padding-left: 20px;
+    display: inline-block;
+}
+.main-menu a:hover::after{
+    content: "";
+    border-bottom: 2px solid #90d32c;
+    width: 40%;
+    margin: 0 auto;
+    display: block;   
+}
+/*Ascoltati Di Recente*/
+.recently-played{
+    margin: 20px 0;
+}
+.recently-played-container-flex-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.recently-played-content-box{
+    width: calc( 100% / 6 );
+}
+.recently-played-content-box img{
+    width: 100%;
+    padding: 10px;
+}
+#stranger-img{
+    width: 90%;
+}
+.recently-played-content-box-text{
+    text-align: center;
+}
+.album-name h4{
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+.artist-name{
+    color: #54585e;
+    font-size: 10px;
 }
 
 
