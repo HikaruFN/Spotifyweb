@@ -85,19 +85,19 @@ main li{
 /*Main Container*/
 .main-content-container{
     float: left;
-    width: calc( 100% - 250px );
+    width: calc( 100% - 180px );
     height: 100%;
     background-color: #141922;
     overflow: hidden;
     overflow-y: auto;
 }
 .main-content-wrapper{
-    padding: 10px 20px;
+    padding: 10px 15px;
 }
 /*Side Nav*/
 .side-nav-container{
     float: left;
-    width: 250px;
+    width: 180px;
     height: 100%;
     background-color: black;
     overflow: hidden;
@@ -200,14 +200,22 @@ margin-bottom: 5px;
     align-items: center;
     flex-wrap: wrap;
 }
-.container-main-menu-flex-row ul li{
-    padding-left: 20px;
-    display: inline-block;
+.main-menu-list{
+    width: 75%;
+    margin: 0 auto;
 }
-.main-menu a:hover::after{
+.main-menu-list li{
+    width: calc( 100% / 6);
+    padding-left: 5px;
+    text-align: center;
+}
+.main-menu-list li a{
+    font-size: 11px;
+}
+.main-menu-list li a:hover::after{ 
     content: "";
     border-bottom: 2px solid #90d32c;
-    width: 40%;
+    width: 15%;
     margin: 0 auto;
     display: block;   
 }
@@ -340,14 +348,34 @@ margin-bottom: 5px;
 }
 
 
-
 /*Media Queries*/
+/*Side Nav*/
+@media only screen and (min-width: 426px){
+.hidden-after-xs{
+    display: none;
+}
+}
+
+/*Media Queries XS*/
 @media only screen and (max-width: 425px){
+/*Main Menu*/    
+.main-menu-list{
+    width: 100%;
+    margin: 0 auto;
+}
+.main-menu-list li{
+    width: calc( 100% / 4);
+}    
+.main-menu-list li a{
+    font-size: 8px;
+}
+/*Main Content*/    
 .main-content-container{
     float: left;
     width: calc( 100% - 50px );
     height: 100%;
-}    
+}
+/*Side Nav*/    
 .hidden-xs{
     display: none;
 }
@@ -375,21 +403,35 @@ nav a:hover::before{
 }
 }
 
-@media only screen and (min-width: 426px){
-.hidden-after-xs{
-    display: none;
-}
-
-}
-
+/*Media Queries S*/
 @media only screen and (min-width: 426px) and (max-width: 768px){
+/*Main Menu*/   
+.main-menu-list{
+    width: 100%;
+    margin: 0 auto;
+}
+.main-menu-list li{
+    width: calc( 100% / 3);
+} 
+.main-menu-list li a{
+    font-size: 8px;
+}      
 /*Ascoltati Di recente*/
 .recently-played-content-box{
     width: calc( 100% / 2 );
 }       
 }
 
+/*Media Queries MD*/
 @media only screen and (min-width: 768px) and (max-width: 1024px){
+/*Main Menu*/   
+.main-menu-list{
+    width: 100%;
+    margin: 0 auto;
+}
+.main-menu-list li{
+    width: calc( 100% / 5);
+}    
 /*Ascoltati Di recente*/
 .recently-played-content-box{
     width: calc( 100% / 4 );
