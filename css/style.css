@@ -26,6 +26,13 @@
     width: 100%;
     height: 100%;
 }
+.inner-container-flex-row{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: auto;
+    height: 100%;
+}
 .inline{
     display: inline-block;
 }
@@ -178,9 +185,11 @@ nav a:hover::before{
     font-size: 10px;
 }
 /*Like e Salva*/
+.song-save{
+    margin-left: 80px;
+}
 .song-save-buttons{
     font-size: 30px;
-    vertical-align: middle;
 }
 
 
