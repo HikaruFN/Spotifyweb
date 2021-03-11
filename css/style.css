@@ -31,6 +31,14 @@
     justify-content: center;
     align-items: center;
 }
+.main-section-container-flex-row{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.main-section-container{
+    margin: 20px 0;
+}
 .inline-block{
     display: inline-block;
 }
@@ -46,6 +54,11 @@ a{
     text-decoration: none;
     color: #767676;
     font-size: 13px;
+}
+p{
+    color: #707377;
+    font-size: 12px;
+    padding-top: 10px;
 }
 h2{
     color: white;
@@ -219,26 +232,27 @@ margin-bottom: 5px;
     margin: 0 auto;
     display: block;   
 }
-/*Ascoltati Di Recente*/
-.recently-played{
-    margin: 20px 0;
-}
-.recently-played-text{
+/*Ascoltati Di Recente / Creato Per Te / Artisti Popolari*/
+.recently-played-text, .made-for-you-text, .popular-artist-text{
     padding-bottom: 10px;
 }
-.recently-played-container-flex-row{
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-}
-.recently-played-content-box{
+.recently-played-content-box, .made-for-you-content-box, .popular-artist-content-box{
     width: calc( 100% / 6 );
 }
-.recently-played-content-box img{
+.recently-played-img img, .made-for-you-img img, .popular-artist-img img{
     width: 100%;
     padding: 10px 5px;
 }
-.recently-played-content-box-text{
+.popular-artist-img img{
+    border-radius: 50%;
+}
+.recently-played-img{
+    position: relative;
+}
+.recently-played-img img:hover, .made-for-you-img img:hover, .popular-artist-img img:hover{
+    opacity: 0.2;
+}
+.recently-played-content-box-text, .made-for-you-content-box-text, .popular-artist-content-box-text{
     text-align: center;
     height: 100px;
 }
@@ -246,7 +260,7 @@ margin-bottom: 5px;
     font-size: 15px;
     padding-bottom: 10px;
 }
-.artist-name{
+.artist-name a{
     color: #54585e;
     font-size: 10px;
 }
@@ -348,13 +362,16 @@ margin-bottom: 5px;
 }
 
 
-/*Media Queries*/
+/*MEIDIA QUERIES*/
+
+/*COMMON*/
 /*Side Nav*/
 @media only screen and (min-width: 426px){
-.hidden-after-xs{
-    display: none;
+    .hidden-after-xs{
+        display: none;
 }
 }
+
 
 /*Media Queries XS*/
 @media only screen and (max-width: 425px){
@@ -401,6 +418,10 @@ nav a:hover::before{
 .recently-played-content-box{
     width: calc( 100% / 2 );
 }
+/*Creato Per Te / Artisti Popolari*/     
+.made-for-you-content-box, .popular-artist-content-box{
+    width: calc( 100% / 2 );
+}
 }
 
 /*Media Queries S*/
@@ -419,7 +440,11 @@ nav a:hover::before{
 /*Ascoltati Di recente*/
 .recently-played-content-box{
     width: calc( 100% / 2 );
-}       
+} 
+/*Creato Per Te / Artisti Popolari*/     
+.made-for-you-content-box, .popular-artist-content-box{
+    width: calc( 100% / 2 );
+} 
 }
 
 /*Media Queries MD*/
@@ -436,6 +461,10 @@ nav a:hover::before{
 .recently-played-content-box{
     width: calc( 100% / 4 );
 } 
+/*Creato Per Te / Artisti Popolari*/     
+.made-for-you-content-box, .popular-artist-content-box{
+    width: calc( 100% / 4 );
+}
 }
 
 
