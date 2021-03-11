@@ -36,7 +36,6 @@
 }
 ul{
     list-style: none;
-    padding: 10px 0;
 }
 a img{
     width: 10%;
@@ -69,11 +68,13 @@ h4{
 main{
     height: calc( 100% - 100px);
 }
+main ul{
+    padding: 10px 0;
+}
 main li{
     padding: 5px 0;
     color: #6b6b6b
 }
-
 /*Main Container*/
 .main-container{
     float: left;
@@ -161,27 +162,32 @@ nav a:hover::before{
 .wrapper-footer{
     width: 100%;
     height: 100%;
-    padding: 10px 10px;
+    padding: 10px 4px;
 }
 /*Brano Corrente*/
 /*Copertina/Nome Brano/Nome Album*/
+.current-song-container{
+    width: 15%;
+}
 .img-copertina img{
     width: 40px;
     height: 40px;
 }
-.song{
-    margin-left: 10px;
+.info-song{
+    width: 70%;
 }
 .album-name h5{
     color: white;
+    font-size: 12px;
 }
-.song-name{
+.song-name a{
     color: #6a6a6a;
     font-size: 10px;
 }
 /*Like e Salva*/
 .song-save{
-    margin-left: 80px;
+    width: 30%;
+    padding-left: 10px;
 }
 .song-save-buttons{
     font-size: 30px;
@@ -200,33 +206,42 @@ nav a:hover::before{
     color: #f0f0f0;
     padding: 10px;
 }
+.song-ctrl-pannel{
+    width: 70%;
+    text-align: center;
+}
 .song-time-bar{
-    width: 500px;
-    height: 5px;
+    width: 50%;
+    height: 3px;
     background-color: #5a5a5a;
     border-radius: 10px;
     vertical-align: middle;
 }
 .inner-song-time-bar{
-    width: 100px;
+    width: 20%;
     height: 100%;
     background-color: white;
     border-radius: 10px;
 }
 /*Pannelo Di Controllo Utente*/
+.user-ctrl-pannel{
+    width: 15%;
+}
+.user-action-pannel ul li{
+    padding-right: 10px;
+}
 .user-action-pannel ul li a{
     font-size: 10px;
-    padding: 10px;
     color: #f0f0f0;
 }
 .short-song-time-bar{
-    width: 150px;
-    height: 5px;
+    width: 100px;
+    height: 3px;
     background-color: #5a5a5a;
     border-radius: 10px;
 }
 .inner-short-song-time-bar{
-    width: 30px;
+    width: 20%;
     height: 100%;
     background-color: white;
     border-radius: 10px;
