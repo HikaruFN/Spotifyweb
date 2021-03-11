@@ -217,6 +217,24 @@ nav a:hover::before{
     background-color: white;
     border-radius: 10px;
 }
+/*Pannelo Di Controllo Utente*/
+.user-action-pannel ul li a{
+    font-size: 10px;
+    padding: 10px;
+    color: #f0f0f0;
+}
+.short-song-time-bar{
+    width: 150px;
+    height: 5px;
+    background-color: #5a5a5a;
+    border-radius: 10px;
+}
+.inner-short-song-time-bar{
+    width: 30px;
+    height: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
 
 
 
