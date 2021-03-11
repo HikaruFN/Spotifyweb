@@ -249,6 +249,14 @@ margin-bottom: 5px;
 .recently-played-img{
     position: relative;
 }
+.hidden-play{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+    font-size: 50px;
+    color: white;
+}
 .recently-played-img img:hover, .made-for-you-img img:hover, .popular-artist-img img:hover{
     opacity: 0.2;
 }
