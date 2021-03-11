@@ -76,7 +76,7 @@ main li{
     color: #6b6b6b
 }
 /*Main Container*/
-.main-container{
+.main-content-container{
     float: left;
     width: calc( 100% - 250px );
     height: 100%;
@@ -148,6 +148,36 @@ nav a:hover::before{
     content: "";
     border-left: 2px solid #adff2f;
     margin-right: 10px;
+}
+/*Main Content*/
+/*Upgrade Container*/
+.upgrade-container{
+    height: 70px;
+    background-color: #080b12;
+}
+.upgrade-container-wrapper{
+    padding:  15px 5px;
+    width: 100%;
+    height: 100%;
+}
+.upgrade-button-container{
+    border: 1px solid white;
+    padding: 10px 10px;
+    margin-right: 5px;
+    border-radius: 20px;
+    width: 200px;
+    text-align: center;
+}  
+.upgrade-button-container h4{
+    color: white;
+}
+.inner-container-upgrade-flex-row{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.button-text{
+    width: 100%;
 }
 
 
@@ -223,7 +253,7 @@ nav a:hover::before{
     background-color: white;
     border-radius: 10px;
 }
-/*Pannelo Di Controllo Utente*/
+/*Pannelo Di Controllo Utente*/ /*DA RIVEDERE!*/
 .user-ctrl-pannel{
     width: 15%;
 }
@@ -251,7 +281,7 @@ nav a:hover::before{
 
 /*Media Queries*/
 @media only screen and (max-width: 425px){
-.main-container{
+.main-content-container{
     float: left;
     width: calc( 100% - 50px );
     height: 100%;
