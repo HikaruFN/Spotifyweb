@@ -308,14 +308,14 @@ margin-bottom: 5px;
 /*Brano Corrente*/
 /*Copertina/Nome Brano/Nome Album*/
 .current-song-container{
-    width: 15%;
+    width: 200px;
 }
 .img-copertina img{
     width: 40px;
     height: 40px;
 }
 .info-song{
-    width: 70%;
+    width: 150px;
 }
 .album-name h5{
     color: white;
@@ -327,12 +327,12 @@ margin-bottom: 5px;
 }
 /*Hover Nome canzone*/
 .song-name a:hover{
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid w;
     color: white;
 }
 /*Like e Salva*/
 .song-save{
-    width: 30%;
+    width: 50px;
 }
 .song-save-buttons{
     font-size: 30px;
@@ -356,7 +356,7 @@ margin-bottom: 5px;
     padding: 10px;
 }
 .song-ctrl-pannel{
-    width: 70%;
+    width: 1000px;
     text-align: center;
 }
 .song-time-bar{
@@ -392,7 +392,7 @@ margin-bottom: 5px;
 }
 /*Pannelo Di Controllo Utente*/
 .user-ctrl-pannel{
-    width: 15%;
+    width: 200px;
 }
 .user-action-pannel ul li{
     padding-right: 10px;
@@ -412,6 +412,21 @@ margin-bottom: 5px;
     height: 100%;
     background-color: white;
     border-radius: 10px;
+}
+/*Hover Barra canzone Interna Piccola*/
+.inner-short-song-time-bar:hover{
+    background-color: #90d32c;
+    position: relative;
+}
+.inner-short-song-time-bar:hover::after{
+    content: "";
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: -3px;
+    right: 0;
 }
 
 
