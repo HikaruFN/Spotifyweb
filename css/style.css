@@ -46,7 +46,7 @@ ul{
     list-style: none;
 }
 a img{
-    width: 10%;
+    width: 20px;
     vertical-align: middle;
     color: #7b7b7b;
 }
@@ -246,16 +246,20 @@ margin-bottom: 5px;
 .popular-artist-img img{
     border-radius: 50%;
 }
-.recently-played-img{
+.recently-played-img, .made-for-you-img, .popular-artist-img{
     position: relative;
 }
 .hidden-play{
+    display: none;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate( -50%, -50%);
     font-size: 50px;
     color: white;
+}
+.recently-played-img:hover .hidden-play, .made-for-you-img:hover .hidden-play, .popular-artist-img:hover .hidden-play{
+    display: inline;
 }
 .recently-played-img img:hover, .made-for-you-img img:hover, .popular-artist-img img:hover{
     opacity: 0.2;
