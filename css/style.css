@@ -223,6 +223,9 @@ margin-bottom: 5px;
     font-size: 11px;
 }
 /*Bordo Hover Main Menu*/
+.main-menu-list li a:hover{
+    color: white;
+}
 .main-menu-list li a:hover::after{ 
     content: "";
     border-bottom: 2px solid #90d32c;
@@ -266,7 +269,7 @@ margin-bottom: 5px;
     top: 50%;
     left: 50%;
     transform: translate( -50%, -50%);
-    font-size: 50px;
+    font-size: 70px;
     color: white;
 }
 .recently-played-img:hover .hidden-play, .made-for-you-img:hover .hidden-play, .popular-artist-img:hover .hidden-play{
@@ -308,10 +311,14 @@ margin-bottom: 5px;
     color: #6a6a6a;
     font-size: 10px;
 }
+/*Hover Nome canzone*/
+.song-name a:hover{
+    text-decoration: white;
+    color: white;
+}
 /*Like e Salva*/
 .song-save{
     width: 30%;
-    padding-left: 10px;
 }
 .song-save-buttons{
     font-size: 30px;
@@ -346,7 +353,22 @@ margin-bottom: 5px;
     background-color: white;
     border-radius: 10px;
 }
-/*Pannelo Di Controllo Utente*/ /*DA RIVEDERE!*/
+/*Hover Barra canzone Interna*/
+.inner-song-time-bar:hover{
+    background-color: #90d32c;
+    position: relative;
+}
+.inner-song-time-bar:hover::after{
+    content: "";
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+/*Pannelo Di Controllo Utente*/
 .user-ctrl-pannel{
     width: 15%;
 }
@@ -373,7 +395,9 @@ margin-bottom: 5px;
 
 /*MEIDIA QUERIES*/
 
+
 /*COMMON*/
+
 /*Side Nav*/
 @media only screen and (min-width: 426px){
     .hidden-after-xs{
