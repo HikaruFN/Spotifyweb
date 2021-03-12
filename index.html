@@ -18,15 +18,14 @@
         <main>
             <!--Side Nav-->
             <nav class="side-nav-container"> <!--Applica Float colore background e Dimensioni-->
-                <div class="wrapper-side-nav"> <!--Gestisce spaziature Nav-->
-                    <div class="container-flex-column"> <!--Conferisce Display Flex Column-->
-                        <!--Contiene da Logo a Playlist-->
-                        <div class="side-nav-content-container inner-container-flex-column"> 
+                <div class="wrapper-side-nav"> <!--Applica Padding al contenitore-->
+                    <div class="container-flex-column">
+                        <div class="side-nav-content-container inner-container-flex-column"> <!--Contiene da Logo a Playlist-->
                             <!--Logo-->
                             <div class="logo hidden-xs">
                                 <img src="img/logo.svg" alt="logo">
                             </div>
-                            <!--Logo XS-->
+                            <!--Logo Risoluzione XS-->
                             <div class="hidden-after-xs" >
                                 <a href="#"><img src="img/logo-small.svg" alt="logo-small"></a>
                             </div>
@@ -38,8 +37,8 @@
                                     <li><a href="#"><img src="img/libreria.svg" alt="libreria"> La tua libreria</a></li>
                                 </ul>
                             </div>
-                            <!--Menu XS-->
-                            <div class="hidden-after-xs"> <!--poi gestisci meglio la struttura, solo la scritta cambia in xs!-->
+                            <!--Menu Risoluzione XS-->
+                            <div class="hidden-after-xs">
                                 <ul>
                                     <li><a href="#"><img src="img/home.svg" alt="home"></a></li>
                                     <li><a href="#"><img src="img/search.svg" alt="search"></a></li>
@@ -56,6 +55,7 @@
                                         <a href="#"><span class="plus"><i class="fas fa-plus-square"></span></i>Crea Playlist</a>
                                     </div>
                                 </div>
+                                <!--Nuova Playlist-->
                                 <div class="scroll-list">
                                     <ul>
                                         <li><a href="#">Nome Playlist</a></li>
@@ -70,25 +70,27 @@
                             </div>
                         </div>
                         
-                        <div class="side-nav-content-container"> 
+                        <div class="side-nav-content-container"> <!--Contiene Download e Profilo Utente-->
                             <!--Download--> 
                             <div class="download hidden-xs">
                                 <a href="#"><i class="fas fa-arrow-circle-down"></i> Installa app</a>
                             </div>
-                            <!--Download XS-->
+                            <!--Download Risoluzione XS-->
                             <div class="download hidden-after-xs">
                                 <a class="download-arrow" href="#"><i class="fas fa-arrow-circle-down"></i></a>
                             </div>
                             <!--Profilo Utente-->
-                            <div class="user-container hidden-xs">
-                                <div class="user-icon-container">
+                            <div class="user-container inline-block hidden-xs">
+                                <div class="user-icon-container inline-block">
                                     <img class="user-img" src="img/profile.svg" alt="profile">
                                 </div>
-                                <h4>John Doe</h4>
+                                <div class="inline-block">
+                                    <h4>John Doe</h4>
+                                </div>
                             </div>
-                            <!--Profilo Utente XS-->
-                            <div class="user-container hidden-after-xs">
-                                <div class="user-icon-container">
+                            <!--Profilo Utente Risoluzione XS-->
+                            <div class="user-container .inline-block hidden-after-xs">
+                                <div class="user-icon-container inline-block">
                                     <img class="user-img" src="img/profile.svg" alt="profile">
                                 </div>
                             </div>
@@ -97,12 +99,13 @@
                 </div>     
             </nav>
             <!--End Side Nav-->
-            <!--Main Content-->
+            <!--Main Content Superiore-->
             <div class="main-content-container"> <!--Applica Float colore background e Dimensioni-->
                 <!--Upgrade-->
-                <div class="upgrade-container"> <!-- Applica dimenisioni e background-->
-                    <div class="upgrade-container-wrapper inner-container-upgrade-flex-row"> <!--Gestisce spaziature-->
+                <div class="upgrade-container"> <!-- Applica dimenisioni e colore background alla riga Update-->
+                    <div class="upgrade-container-wrapper inner-container-upgrade-flex-row"> <!--Gestisce spaziature alla riga Update-->
                         <div class="upgrade-button-container"> <!--Contenitore bottone Upgrade-->
+                            <!--Bottone Upgrade-->
                             <div class="button-text">
                                 <a href="#"><h4>EFFETTUA L'UPGRADE</h4></a>
                             </div>
@@ -110,33 +113,33 @@
                     </div>
                 </div>
                 <!--Main Content Principale-->
-                <div class="main-content-wrapper">
+                <div class="main-content-wrapper"> <!--Gestisce spaziature al Main content Principale-->
                     <!--Main Menu-->
-                    <div class="main-menu-container">
+                    <div class="main-menu-container"> <!--Contiene il Menu Principale-->
                         <ul class="main-menu-list container-main-menu-flex-row">
-                            <li><a href="#">IN EVIDENZA</a></li>
-                            <li><a href="#">PODCAST</a></li>
-                            <li><a href="#">CLASSIFICHE</a></li>
-                             <li><a href="#">GENERI E MOOD</a></li>
-                            <li><a href="#">NUOVE USCITE</a></li>
-                            <li><a href="#">SCOPRI</a></li>
+                            <li><a href="#">in evidenza</a></li>
+                            <li><a href="#">podcast</a></li>
+                            <li><a href="#">classifiche</a></li>
+                            <li><a href="#">generi e mood</a></li>
+                            <li><a href="#">nuove uscite</a></li>
+                            <li><a href="#">scopri</a></li>
                         </ul>                    
                     </div>
                     <!--Ascoltati Di Recente-->
-                    <div class="main-section-container">
+                    <div class="main-section-container"> <!--Applica Spaziatura alle sezioni del Main Content Principale-->
                         <div class="recently-played-text">
                             <h2>Recently Played</h2>
                         </div>
-                        <div class="recently-played-content main-section-container-flex-row">
-                            <div class="recently-played-content-box">
-                                <div class="recently-played-img">
+                        <div class="main-section-container-flex-row">
+                            <div class="recently-played-content-box"> <!--Gestisce grandezza del contenitore-->
+                                <div class="recently-played-img"> <!--Contenitore Immagine-->
                                     <a href="#"><img src="img/metal_lifting.jpg" alt="metal_lifting"></a>
-                                    <!--Play Nascosto-->
+                                    <!--Tasto Play Nascosto-->
                                     <div class="hidden-play">
                                         <i class="far fa-play-circle"></i>
                                     </div>
                                 </div>
-                                <div class="recently-played-content-box-text">
+                                <div class="recently-played-content-box-text"> <!--Contenitore Info Canzone/Artista-->
                                     <div class="album-name">
                                         <h4>Heavy Metal</h4>
                                     </div>
@@ -145,15 +148,15 @@
                                     </div>
                                 </div>
                             </div> 
-                            <div class="recently-played-content-box">
-                                <div class="recently-played-img">
+                            <div class="recently-played-content-box"> <!--Gestisce grandezza del contenitore-->
+                                <div class="recently-played-img"> <!--Contenitore Immagine-->
                                     <a href="#"><img src="img/stranger.jpeg" alt="stranger"></a>
-                                    <!--Play Nascosto-->
+                                    <!--Tasto Play Nascosto-->
                                     <div class="hidden-play">
                                         <i class="far fa-play-circle"></i>
                                     </div>
                                 </div>
-                                <div class="recently-played-content-box-text">
+                                <div class="recently-played-content-box-text"> <!--Contenitore Info Canzone/Artista-->
                                     <div class="album-name">
                                         <h4>Stranger Things Vol.1 (A Netflix Original Series Soundtrack)</h4>
                                     </div>
@@ -162,15 +165,15 @@
                                     </div>
                                 </div>
                             </div>  
-                            <div class="recently-played-content-box">
-                                <div class="recently-played-img">
+                            <div class="recently-played-content-box"> <!--Gestisce grandezza del contenitore--> 
+                                <div class="recently-played-img"> <!--Contenitore Immagine-->
                                     <a href="#"><img src="img/aquietplace.jpeg" alt="aquietplace"></a>
-                                    <!--Play Nascosto-->
+                                    <!--Tasto Play Nascosto-->
                                     <div class="hidden-play">
                                         <i class="far fa-play-circle"></i>
                                     </div>
                                 </div>
-                                <div class="recently-played-content-box-text">
+                                <div class="recently-played-content-box-text"> <!--Contenitore Info Canzone/Artista-->
                                     <div class="album-name">
                                         <h4>A quiet place</h4>
                                     </div>
@@ -179,15 +182,15 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="recently-played-content-box">
-                                <div class="recently-played-img">
+                            <div class="recently-played-content-box"> <!--Gestisce grandezza del contenitore-->
+                                <div class="recently-played-img"> <!--Contenitore Immagine-->
                                     <a href="#"><img src="img/split.jpeg" alt="Split"></a>
-                                    <!--Play Nascosto-->
+                                    <!--Tasto Play Nascosto-->
                                     <div class="hidden-play">
                                         <i class="far fa-play-circle"></i>
                                     </div>
                                 </div>
-                                <div class="recently-played-content-box-text">
+                                <div class="recently-played-content-box-text"> <!--Contenitore Info Canzone/Artista-->
                                     <div class="album-name">
                                         <h4>Split</h4>
                                     </div>
@@ -196,15 +199,15 @@
                                     </div>
                                 </div>
                             </div> 
-                            <div class="recently-played-content-box">
-                                <div class="recently-played-img">
+                            <div class="recently-played-content-box"> <!--Gestisce grandezza del contenitore-->
+                                <div class="recently-played-img"> <!--Contenitore Immagine-->
                                     <a href=""><img src="img/cure.jpeg" alt="cure"></a>
-                                    <!--Play Nascosto-->
+                                    <!--Tasto Play Nascosto-->
                                     <div class="hidden-play">
                                         <i class="far fa-play-circle"></i>
                                     </div>
                                 </div>
-                                <div class="recently-played-content-box-text">
+                                <div class="recently-played-content-box-text"> <!--Contenitore Info Canzone/Artista-->
                                     <div class="album-name">
                                         <h4>A cure for wellness</h4>
                                     </div>
@@ -213,15 +216,15 @@
                                     </div>
                                 </div>
                             </div>  
-                            <div class="recently-played-content-box">
-                                <div class="recently-played-img">
+                            <div class="recently-played-content-box"> <!--Gestisce grandezza del contenitore-->
+                                <div class="recently-played-img"> <!--Contenitore Immagine-->
                                     <a href="#"><img src="img/sinister.jpeg" alt="sinister"></a>
-                                    <!--Play Nascosto-->
+                                    <!--Tasto Play Nascosto-->
                                     <div class="hidden-play">
                                         <i class="far fa-play-circle"></i>
                                     </div>
                                 </div>
-                                <div class="recently-played-content-box-text">
+                                <div class="recently-played-content-box-text"> <!--Contenitore Info Canzone/Artista-->
                                     <div class="album-name">
                                         <h4>Sinister</h4>
                                     </div>
@@ -231,76 +234,73 @@
                                 </div>
                             </div>                                    
                         </div>
-
                     </div> 
                     <!--Creato Per Te-->
-                    <div class="main-section-container">
+                    <div class="main-section-container"> <!--Applica Spaziatura alle sezioni del Main Content Principale-->
                         <div class="made-for-you-text">
                             <h2>Creato per John Doe</h2>
                             <p>Più ascolti, più accurati saranno i suggerimenti.</p>
                         </div>
                         <div class="main-section-container-flex-row">
-                            <div class="made-for-you-content-box">
-                                <div class="made-for-you-img">
+                            <div class="made-for-you-content-box"> <!--Gestisce grandezza del contenitore-->
+                                <div class="made-for-you-img"> <!--Contenitore Immagine-->
                                     <a href=" #"><img src="img/radar.jpeg" alt="radar"></a>
-                                    <!--Play Nascosto-->
+                                    <!--Tasto Play Nascosto-->
                                     <div class="hidden-play">
                                         <i class="far fa-play-circle"></i>
                                     </div>
                                 </div>
-                                <div class="made-for-you-content-box-text">
+                                <div class="made-for-you-content-box-text"> <!--Contenitore Info Playlist suggerita-->
                                     <h4>Relese Radar</h4>
                                 </div>
                             </div>
-                            <div class="made-for-you-content-box">
-                                <div class="made-for-you-img">
+                            <div class="made-for-you-content-box"> <!--Gestisce grandezza del contenitore-->
+                                <div class="made-for-you-img"> <!--Contenitore Immagine-->
                                     <a href="#"><img src="img/mixdaily.jpeg" alt="mixdaily"></a>
-                                    <!--Play Nascosto-->
+                                    <!--Tasto Play Nascosto-->
                                     <div class="hidden-play">
                                         <i class="far fa-play-circle"></i>
                                     </div>
                                 </div>
-                                <div class="made-for-you-content-box-text">
+                                <div class="made-for-you-content-box-text"> <!--Contenitore Info Playlist suggerita-->
                                     <h4>Daily Mix 1</h4>
                                 </div>
                             </div>
                         </div>
                     </div>  
                     <!--Artisti Popolari-->
-                    <div class="main-section-container">
+                    <div class="main-section-container"> <!--Applica Spaziatura alle sezioni del Main Content Principale-->
                         <div class="popular-artist-text">
                             <h2>Artisti più Popolari</h2>
                             <p>Più ascolti, più accurati saranno i suggerimenti.</p>
                         </div>
                         <div class="main-section-container-flex-row">
-                            <div class="popular-artist-content-box">
-                                <div class="popular-artist-img">
+                            <div class="popular-artist-content-box"> <!--Gestisce grandezza del contenitore-->
+                                <div class="popular-artist-img"> <!--Contenitore Immagine-->
                                     <a href=" #"><img src="img/einaudi.jpeg" alt="einaudi"></a>
-                                    <!--Play Nascosto-->
+                                    <!--Tasto Play Nascosto-->
                                     <div class="hidden-play">
                                         <i class="far fa-play-circle"></i>
                                     </div>
                                 </div>
-                                <div class="popular-artist-content-box-text">
+                                <div class="popular-artist-content-box-text"> <!--Contenitore Info Canzone/Artista-->
                                     <h4>Einaudi</h4>
                                 </div>
                             </div>
-                            <div class="popular-artist-content-box">
-                                <div class="popular-artist-img">
+                            <div class="popular-artist-content-box"> <!--Gestisce grandezza del contenitore-->
+                                <div class="popular-artist-img"> <!--Contenitore Immagine-->
                                     <a href="#"><img src="img/youg.jpeg" alt="youg"></a>
-                                    <!--Play Nascosto-->
+                                    <!--Tasto Play Nascosto-->
                                     <div class="hidden-play">
                                         <i class="far fa-play-circle"></i>
                                     </div>
                                 </div>
-                                <div class="popular-artist-content-box-text">
+                                <div class="popular-artist-content-box-text"> <!--Contenitore Info Canzone/Artista-->
                                     <h4>Lana Del Rey</h4>
                                 </div>
                             </div>
                         </div>
                     </div>  
-
-
                 </div>
             </div>
             <!--End Main Content-->

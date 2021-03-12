@@ -11,7 +11,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 100%;
+    /*width: 100%;*/
     height: 100%;
 }
 .inner-container-flex-column{
@@ -78,9 +78,6 @@ h4{
     width: 100%;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-
-    /*TEST*/
-    background-color: burlywood;
 }
 
 
@@ -95,18 +92,7 @@ main li{
     padding: 5px 0;
     color: #6b6b6b
 }
-/*Main Container*/
-.main-content-container{
-    float: left;
-    width: calc( 100% - 180px );
-    height: 100%;
-    background-color: #141922;
-    overflow: hidden;
-    overflow-y: auto;
-}
-.main-content-wrapper{
-    padding: 10px 15px;
-}
+
 /*Side Nav*/
 .side-nav-container{
     float: left;
@@ -117,7 +103,7 @@ main li{
 }
 .wrapper-side-nav{
     padding: 10px 10px;
-    width: 100%;
+    /*width: 100%;*/
     height: 100%;
 }
 .logo img{
@@ -142,7 +128,7 @@ main li{
     vertical-align: middle;
     padding-right: 5px;
 }
-.download::after{
+.download::after{ 
     content: "";
     display: block;
     border: 1px solid #4d4d4d;
@@ -157,13 +143,11 @@ main li{
     background-color: #808080;
     margin-right: 5px;
 }
-.user-container .user-icon-container,h4{
-    display: inline-block;
-}
 .user-img{
     width: 100%;
     height: 100%;
 }
+/*Elementi Hover Side Nav*/
 nav a:hover{
     color: white;
 }
@@ -172,7 +156,19 @@ nav a:hover::before{
     border-left: 2px solid #adff2f;
     margin-right: 10px;
 }
-/*Main Content*/
+/*Main Container*/
+.main-content-container{
+    float: left;
+    width: calc( 100% - 180px );
+    height: 100%;
+    background-color: #141922;
+    overflow: hidden;
+    overflow-y: auto;
+}
+.main-content-wrapper{
+    padding: 10px 15px;
+}
+/*Main Content Superiore*/
 /*Upgrade Container*/
 .upgrade-container{
     height: 70px;
@@ -202,7 +198,7 @@ nav a:hover::before{
 .button-text{
     width: 100%;
 }
-/*Main content principale*/
+/*Main Content Principale*/
 /*Main Menu*/
 .main-menu-container{
 margin-bottom: 5px;
@@ -216,6 +212,7 @@ margin-bottom: 5px;
 .main-menu-list{
     width: 75%;
     margin: 0 auto;
+    text-transform: uppercase;
 }
 .main-menu-list li{
     width: calc( 100% / 6);
@@ -225,6 +222,7 @@ margin-bottom: 5px;
 .main-menu-list li a{
     font-size: 11px;
 }
+/*Bordo Hover Main Menu*/
 .main-menu-list li a:hover::after{ 
     content: "";
     border-bottom: 2px solid #90d32c;
@@ -249,6 +247,19 @@ margin-bottom: 5px;
 .recently-played-img, .made-for-you-img, .popular-artist-img{
     position: relative;
 }
+.recently-played-content-box-text, .made-for-you-content-box-text, .popular-artist-content-box-text{
+    text-align: center;
+    height: 100px;
+}
+.album-name h4{
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+.artist-name a{
+    color: #54585e;
+    font-size: 10px;
+}
+/*Elementi Hover Ascoltati Di Recente / Creato Per Te / Artisti Popolari*/
 .hidden-play{
     display: none;
     position: absolute;
@@ -263,18 +274,6 @@ margin-bottom: 5px;
 }
 .recently-played-img img:hover, .made-for-you-img img:hover, .popular-artist-img img:hover{
     opacity: 0.2;
-}
-.recently-played-content-box-text, .made-for-you-content-box-text, .popular-artist-content-box-text{
-    text-align: center;
-    height: 100px;
-}
-.album-name h4{
-    font-size: 15px;
-    padding-bottom: 10px;
-}
-.artist-name a{
-    color: #54585e;
-    font-size: 10px;
 }
 
 
