@@ -369,6 +369,9 @@ margin-bottom: 5px;
     width: 1000px;
     text-align: center;
 }
+.song-action-pannel ul{ /*Serve per non far sbordare il Play in Hover*/
+    height: 32px;
+}
 .song-time-bar{
     width: 60%;
     height: 3px;
