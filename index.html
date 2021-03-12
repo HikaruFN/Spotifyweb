@@ -309,27 +309,31 @@
 
         <!--FOOTER-->
         <footer>
-            <div class="footer-container"> <!--Applica colore background-->
+            <div class="footer-container"> <!--Applica colore background ed altezza-->
                 <div class="wrapper-footer"> <!--Gestisce spaziature Footer-->
-                    <div class="container-flex-row"> <!--Conferisce Display Flex row-->
+                    <div class="container-flex-row">
                         <!--Brano Corrente-->
-                        <div class="current-song-container inner-container-flex-row">
+                        <div class="current-song-container inner-container-flex-row"> <!--Applica larghezza al contenitore-->
                             <!--Copertina/Nome Brano/Nome Album-->
-                            <div class="info-song">
+                            <div class="info-song"> <!--Contenitore Info ed immagine Canzone in riproduzione-->
+                                <!--Immagine Canzone--> 
                                 <div class="img-copertina inline-block">
                                     <img src="img/sinister.jpeg" alt="sinister">
-                                </div>
+                                </div>                              
                                 <div class="song inline-block">
+                                    <!--Nome Album-->
                                     <div class="album-name">
                                         <a href="#"><h5>sinister</h5></a>
                                     </div>
+                                    <!--Nome Canzone-->
                                     <div class="song-name">
                                         <a href="#"><span>Brano Nome</span></a>
                                     </div>
                                 </div>                                
                             </div>
                             <!--Like e Salva-->
-                            <div class="song-save">
+                            <div class="song-save"> <!--Contenitore Pulsanti-->
+                                <!--Pulsanti-->
                                 <div class="song-save-buttons">
                                     <a href="#"><i class="far fa-heart"></i></a>
                                     <a href="#"><i class="far fa-folder"></i></a> 
@@ -337,40 +341,41 @@
                             </div>     
                        </div>
                         <!--Pannello Di Controllo Brano-->
-                        <div class="song-ctrl-pannel inner-container-flex-column">
-                            <div class="song-action-pannel">
-                                <div>
-                                    <ul class="inner-container-flex-row">
-                                        <li><a href="#"><i class="fas fa-random"></i></a></li>
-                                        <li><a href="#"><i class="fas fa-step-backward"></i></a></li>
-                                        <li><a id="play-button" href="#"><i class="far fa-play-circle"></i></a></li> <!--Id per applicare font size-->
-                                        <li><a href="#"><i class="fas fa-step-forward"></i></a></li>
-                                        <li><a href="#"><i class="fas fa-redo"></i></a></li>
-                                    </ul>
-                                </div>
+                        <div class="song-ctrl-pannel inner-container-flex-column"> <!--Applica larghezza al contenitore-->
+                            <div class="song-action-pannel"> <!--Contenitore Pannello di controllo Canzone in riproduzione-->
+                                <ul class="inner-container-flex-row">
+                                    <li><a href="#"><i class="fas fa-random"></i></a></li>
+                                    <li><a href="#"><i class="fas fa-step-backward"></i></a></li>
+                                    <li><a id="play-button" href="#"><i class="far fa-play-circle"></i></a></li> <!--Id per applicare font size-->
+                                    <li><a href="#"><i class="fas fa-step-forward"></i></a></li>
+                                    <li><a href="#"><i class="fas fa-redo"></i></a></li>
+                                </ul>
                             </div>
-                            <div class="song-time-bar-container">
-                                <div>
-                                    <span class="song-time">0:25</span>
-                                    <div class="song-time-bar inline-block"> <!--Barra riproduzione principale-->
-                                        <div class="inner-song-time-bar"> <!--Barra riproduzione interna-->
-                                        </div>
-                                    </div>
-                                    <span class="song-time">0:25</span>
+                            <div class="song-time-bar-container"> <!--Contenitore Barra Riprodizione--> 
+                                <!--Stato Riproduzioen Canzone-->
+                                <span class="song-time">0:25</span>
+                                <!--Barra riproduzione principale-->
+                                <div class="song-time-bar inline-block"> 
+                                    <!--Barra riproduzione interna-->
+                                    <div class="inner-song-time-bar"></div>
                                 </div>
+                                <!--Durata Canzone-->
+                                <span class="song-time">4:35</span> 
                             </div>
                         </div>
                         <!--Pannello Di Controllo Utente-->
-                        <div class="user-ctrl-pannel inner-container-flex-row">
-                            <div class="user-action-pannel">
+                        <div class="user-ctrl-pannel inner-container-flex-row"> <!--Applica larghezza al contenitore-->
+                            <div class="user-action-pannel"> <!--Contenitore Pannello di controllo Utente-->
                                 <ul class="inner-container-flex-row">
                                     <li><a href="#"><i class="fas fa-list-ul"></i></a></li>
                                     <li><a href="#"><i class="fas fa-desktop"></i></a></li>
                                     <li><a href="#"><i class="fas fa-volume-up"></i></a></li>
                                 </ul>
                             </div>
-                            <div class="short-song-time-bar"> <!--Barra riproduzione principale piccola-->
-                                <div class="inner-short-song-time-bar"> <!--Barra riproduzione interna piccola-->
+                            <!--Barra riproduzione principale piccola-->
+                            <div class="short-song-time-bar">
+                                <!--Barra riproduzione interna piccola--> 
+                                <div class="inner-short-song-time-bar"> 
                                 </div>
                             </div>                            
                         </div>
@@ -381,7 +386,6 @@
         <!--END FOOTER-->
 
     </div>
-     <!--End Wrapper App-->
-    
+     <!--End Wrapper App--> 
 </body>
 </html>
