@@ -45,11 +45,6 @@
 ul{
     list-style: none;
 }
-a img{
-    width: 20px;
-    vertical-align: middle;
-    color: #707377;
-}
 a{
     text-decoration: none;
     color: #707377;
@@ -87,7 +82,7 @@ main{
     overflow: hidden;
 }
 main ul{
-    padding: 10px 0;
+    padding: 15px 0;
 }
 main li{
     padding: 5px 0;
@@ -107,7 +102,14 @@ main li{
     height: 100%;
 }
 .logo img{
-    width: 60%;
+    width: 80%;
+}
+.menu svg{
+    width: 25px;
+    vertical-align: middle;
+}
+.menu svg path{
+    fill: #707377;
 }
 .playlist{
     height: 100%;
@@ -148,13 +150,19 @@ main li{
     height: 100%;
 }
 /*Elementi Hover Side Nav*/
+nav a:hover svg path{  
+    fill: white;
+}
 nav a:hover{
     color: white;
 }
-nav a:hover::before{
+/*Bordo Verde "Home"*/
+#green-border-left::before{
     content: "";
-    border-left: 2px solid #adff2f;
-    margin-right: 10px;
+    border-left: 2px solid #90d32c;
+    height: 25px;
+    display: inline-block;
+    vertical-align: middle;
 }
 /*Main Container*/
 .main-content-container{
@@ -240,12 +248,14 @@ margin-bottom: 5px;
 .main-menu-list li a:hover{
     color: white;
 }
-.main-menu-list li a:hover::after{ 
+/*Bordo Verde "IN EVIDENZA"*/
+#green-border-bottom::after{
     content: "";
-    border-bottom: 2px solid #90d32c;
-    width: 15%;
+    border-bottom: 3px solid #90d32c;
+    width: 30px;
+    display: block;
+    height: 3px;
     margin: 0 auto;
-    display: block;   
 }
 /*Ascoltati Di Recente / Creato Per Te / Artisti Popolari*/
 .recently-played-text, .made-for-you-text, .popular-artist-text{
@@ -290,7 +300,7 @@ margin-bottom: 5px;
     display: inline;
 }
 .recently-played-img img:hover, .made-for-you-img img:hover, .popular-artist-img img:hover{
-    opacity: 0.2;
+    opacity: 0.1;
 }
 
 
@@ -327,7 +337,7 @@ margin-bottom: 5px;
 }
 /*Hover Nome canzone*/
 .song-name a:hover{
-    border-bottom: 1px solid w;
+    border-bottom: 1px solid white;
     color: white;
 }
 /*Like e Salva*/
@@ -445,7 +455,7 @@ margin-bottom: 5px;
     /*Creato Per Te / Artisti Popolari*/     
     .made-for-you-content-box, .popular-artist-content-box{
     width: calc( 100% / 4 );
-}
+    }
 }
 /*Querues S*/
 @media only screen and (min-width: 768px) and (max-width: 991px){
@@ -460,7 +470,7 @@ margin-bottom: 5px;
     /*Creato Per Te / Artisti Popolari*/     
     .made-for-you-content-box, .popular-artist-content-box{
     width: calc( 100% / 2);
-}
+    }
 }
 /*Queries XS*/
 @media only screen and (max-width: 767px){
@@ -475,32 +485,32 @@ margin-bottom: 5px;
     /*Creato Per Te / Artisti Popolari*/     
     .made-for-you-content-box, .popular-artist-content-box{
     width: calc( 100% / 2 );
-}   
+    }   
     /*Side Nav*/
     .side-nav-container{
         width: 50px;
         height: 100%;
-}
+    }
     a img{
         width: 100%;
-}
+    }
     .download-arrow{
         position: relative;
         left: 7px;
         bottom: 15px;
-}
+    }
     .download::after{
         display: none;
-}
+    }
     .hidden-xs{
         display: none;
-}
+    }
     .main-content-container{
         width: calc( 100% - 50px );
-}
+    }
     .upgrade-container{
         width: calc( 100% - 50px );
-}
+    }
 
 }
 
@@ -508,18 +518,7 @@ margin-bottom: 5px;
 @media only screen and (min-width: 768px){
     .hidden-after-xs{
         display: none;
+    }
 }
-}
-
-
-
-
-
-
-
-
-
-
-
 
 
