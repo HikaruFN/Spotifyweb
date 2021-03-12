@@ -273,7 +273,7 @@ margin-bottom: 5px;
     padding-bottom: 10px;
 }
 .artist-name a{
-    color: ;
+    color: #707377;
     font-size: 10px;
 }
 /*Elementi Hover Ascoltati Di Recente / Creato Per Te / Artisti Popolari*/
@@ -434,7 +434,6 @@ margin-bottom: 5px;
 
 
 /*COMMON*/
-
 /*Side Nav*/
 @media only screen and (min-width: 426px){
     .hidden-after-xs{
