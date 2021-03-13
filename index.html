@@ -18,102 +18,99 @@
         <main>
             <!--Side Nav-->
             <nav class="side-nav-container"> <!--Applica Float colore background e Dimensioni-->
-                <div class="wrapper-side-nav"> <!--Applica Padding al contenitore-->
-                    <div class="container-flex-column">
-                        <div class="side-nav-content-container inner-container-flex-column"> <!--Contiene da Logo a Playlist-->
-                            <!--Logo-->
-                            <div class="logo hidden-xs">
-                                <img src="img/logo.svg" alt="logo">
-                            </div>
-                            <!--Logo Risoluzione XS-->
-                            <div class="hidden-after-xs" >
-                                <a href="#"><img src="img/logo-small.svg" alt="logo-small"></a>
-                            </div>
-                            <!--Menu-->
-                            <div class="menu hidden-xs">
-                                <ul>
-                                    <li id="green-border-left"> <!--ID per bordo verde-->
-                                        <a href="#">
-                                            <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z" fill="#ffffff"/>
-                                            </svg>
-                                            <span>Home</span> 
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z" fill="#ffffff" fill-rule="evenodd"/>
-                                            </svg>
-                                            <span>Cerca</span> 
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z" fill="#ffffff"/>
-                                            </svg>
-                                            <span>La tua libreria</span> 
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
+                <div class="container-flex-column">
+                    <div class="side-nav-content-container inner-container-flex-column"> <!--Contiene da Logo a Playlist-->
+                        <!--Logo-->
+                        <div class="logo inner-wrapper hidden-xs">
+                            <img src="img/logo.svg" alt="logo">
+                        </div>
+                        <!--Logo Risoluzione XS-->
+                        <div class="hidden-after-xs inner-wrapper">
+                            <a href="#"><img src="img/logo-small.svg" alt="logo-small"></a>
+                        </div>
+                        <!--Menu-->
+                        <div class="menu hidden-xs">
+                            <ul>
+                                <li id="green-border-left"> <!--ID per bordo verde-->
+                                    <a href="#">
+                                        <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z" fill="#ffffff"/>
+                                        </svg>
+                                        <span>Home</span> 
+                                    </a>
+                                </li>
+                                <li class="padding-left">
+                                    <a href="#">
+                                        <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z" fill="#ffffff" fill-rule="evenodd"/>
+                                        </svg>
+                                        <span>Cerca</span> 
+                                    </a>
+                                </li>
+                                <li class="padding-left">
+                                    <a href="#">
+                                        <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z" fill="#ffffff"/>
+                                        </svg>
+                                        <span>La tua libreria</span> 
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                             <!--Menu Risoluzione XS-->
-                            <div class="hidden-after-xs">
-                                <ul>
-                                    <li><a href="#"><img src="img/home.svg" alt="home"></a></li>
-                                    <li><a href="#"><img src="img/search.svg" alt="search"></a></li>
-                                    <li><a href="#"><img src="img/libreria.svg" alt="libreria"></a></li>
-                                </ul>
+                        <div class="hidden-after-xs inner-wrapper">
+                            <ul>
+                                <li><a href="#"><img src="img/home.svg" alt="home"></a></li>
+                                <li><a href="#"><img src="img/search.svg" alt="search"></a></li>
+                                <li><a href="#"><img src="img/libreria.svg" alt="libreria"></a></li>
+                            </ul>
+                         </div>
+                        <!--Playlist-->
+                        <div class="playlist hidden-xs inner-wrapper">
+                            <div class="new-playlist">
+                                <div>
+                                    <h4>PLAYLIST</h4>
+                                </div>
+                                <div>
+                                    <a href="#"><span class="plus"><i class="fas fa-plus-square"></span></i><span>Crea Playlist</span></a>
+                                </div>
                             </div>
-                            <!--Playlist-->
-                            <div class="playlist hidden-xs">
-                                <div class="new-playlist">
-                                    <div>
-                                        <h4>PLAYLIST</h4>
-                                    </div>
-                                    <div>
-                                        <a href="#"><span class="plus"><i class="fas fa-plus-square"></span></i><span>Crea Playlist</span></a>
-                                    </div>
-                                </div>
-                                <!--Nuova Playlist-->
-                                <div class="scroll-list">
-                                    <ul>
-                                        <li><a href="#"><span>Nome Playlist</span> </a></li>
-                                        <li><a href="#"><span>Nome Playlist</span> </a></li>
-                                        <li><a href="#"><span>Nome Playlist</span> </a></li>
-                                        <li><a href="#"><span>Nome Playlist</span> </a></li>
-                                        <li><a href="#"><span>Nome Playlist</span> </a></li>
-                                        <li><a href="#"><span>Nome Playlist</span> </a></li>
-                                        <li><a href="#"><span>Nome Playlist</span> </a></li>
-                                    </ul>
-                                </div>
+                            <!--Nuova Playlist-->
+                            <div class="scroll-list">
+                                <ul>
+                                    <li><a href="#"><span>Nome Playlist</span> </a></li>
+                                    <li><a href="#"><span>Nome Playlist</span> </a></li>
+                                    <li><a href="#"><span>Nome Playlist</span> </a></li>
+                                    <li><a href="#"><span>Nome Playlist</span> </a></li>
+                                    <li><a href="#"><span>Nome Playlist</span> </a></li>
+                                    <li><a href="#"><span>Nome Playlist</span> </a></li>
+                                    <li><a href="#"><span>Nome Playlist</span> </a></li>
+                                </ul>
                             </div>
                         </div>
-                        
-                        <div class="side-nav-content-container"> <!--Contiene Download e Profilo Utente-->
-                            <!--Download--> 
-                            <div class="download hidden-xs">
-                                <a href="#"><i class="fas fa-arrow-circle-down"></i><span> Installa app</span></a>
+                    </div>                        
+                    <div class="side-nav-content-container"> <!--Contiene Download e Profilo Utente-->
+                        <!--Download--> 
+                        <div class="download inner-wrapper hidden-xs">
+                            <a href="#"><i class="fas fa-arrow-circle-down"></i><span> Installa app</span></a>
+                        </div>
+                        <!--Download Risoluzione XS-->
+                        <div class="download inner-wrapper hidden-after-xs ">
+                            <a class="download-arrow" href="#"><i class="fas fa-arrow-circle-down"></i></a>
+                        </div>
+                        <!--Profilo Utente-->
+                        <div class="user-container inner-wrapper inline-block hidden-xs">
+                            <div class="user-icon-container inline-block">
+                                <img class="user-img" src="img/profile.svg" alt="profile">
                             </div>
-                            <!--Download Risoluzione XS-->
-                            <div class="download hidden-after-xs">
-                                <a class="download-arrow" href="#"><i class="fas fa-arrow-circle-down"></i></a>
+                            <div class="inline-block">
+                                <h4>John Doe</h4>
                             </div>
-                            <!--Profilo Utente-->
-                            <div class="user-container inline-block hidden-xs">
-                                <div class="user-icon-container inline-block">
-                                    <img class="user-img" src="img/profile.svg" alt="profile">
-                                </div>
-                                <div class="inline-block">
-                                    <h4>John Doe</h4>
-                                </div>
-                            </div>
-                            <!--Profilo Utente Risoluzione XS-->
-                            <div class="user-container .inline-block hidden-after-xs">
-                                <div class="user-icon-container inline-block">
-                                    <img class="user-img" src="img/profile.svg" alt="profile">
-                                </div>
+                        </div>
+                        <!--Profilo Utente Risoluzione XS-->
+                        <div class="user-container .inline-block hidden-after-xs">
+                            <div class="user-icon-container inline-block">
+                                <img class="user-img" src="img/profile.svg" alt="profile">
                             </div>
                         </div>
                     </div>
