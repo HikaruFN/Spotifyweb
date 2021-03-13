@@ -176,8 +176,6 @@ nav a:hover{
     width: calc( 100% - 180px );
     height: 100%;
     background-color: #141922;
-    /*overflow: hidden;
-    overflow-y: auto;*/
 }
 .main-content-wrapper{
     padding: 10px 15px;
@@ -480,6 +478,10 @@ margin-bottom: 5px;
     .made-for-you-content-box, .popular-artist-content-box{
     width: calc( 100% / 2);
     }
+    /*Side Nav*/
+    .song-save-buttons a{
+        display: block;
+    }
 }
 /*Queries XS*/
 @media only screen and (max-width: 767px){
@@ -499,9 +501,10 @@ margin-bottom: 5px;
     .side-nav-container{
         width: 50px;
         height: 100%;
+        padding: 10px 10px;
     }
     a img{
-        width: 100%;
+        width: 90%;
     }
     .download-arrow{
         position: relative;
@@ -519,6 +522,9 @@ margin-bottom: 5px;
     }
     .upgrade-container{
         width: calc( 100% - 50px );
+    }
+    .song-save-buttons a{
+        display: block;
     }
 
 }
