@@ -266,10 +266,11 @@ margin-bottom: 5px;
 }
 .recently-played-content-box, .made-for-you-content-box, .popular-artist-content-box{
     width: calc( 100% / 6 );
+    padding-top: 5px;
+    padding-left: 10px;
 }
 .recently-played-img img, .made-for-you-img img, .popular-artist-img img{
     width: 100%;
-    padding: 10px 5px;
 }
 .popular-artist-img img{
     border-radius: 50%;
@@ -320,8 +321,6 @@ margin-bottom: 5px;
 }
 /*Brano Corrente*/
 /*Copertina/Nome Brano/Nome Album*/
-.current-song-container{
-}
 .img-copertina img{
     width: 40px;
     height: 40px;
@@ -403,8 +402,6 @@ margin-bottom: 5px;
     right: 0;
 }
 /*Pannelo Di Controllo Utente*/
-.user-ctrl-pannel{
-}
 .user-action-pannel ul li{
     padding-right: 10px;
 }
