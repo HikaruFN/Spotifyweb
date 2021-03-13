@@ -10,8 +10,7 @@
 .container-flex-column{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    /*width: 100%;*/
+    justify-content: space-between;   
     height: 100%;
 }
 .inner-container-flex-column{
@@ -23,13 +22,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
     height: 100%;
 }
 .inner-container-flex-row{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-shrink: 0;
 }
 .main-section-container-flex-row{
     display: flex;
@@ -322,7 +321,6 @@ margin-bottom: 5px;
 /*Brano Corrente*/
 /*Copertina/Nome Brano/Nome Album*/
 .current-song-container{
-    width: 200px;
 }
 .img-copertina img{
     width: 40px;
@@ -346,10 +344,7 @@ margin-bottom: 5px;
 }
 /*Like e Salva*/
 .song-save{
-    width: 70px;
-}
-.song-save-buttons{
-    font-size: 30px;
+    padding-left: 20px;
 }
 /*Hover Bottoni*/
 .song-save-buttons a:hover{
@@ -370,7 +365,7 @@ margin-bottom: 5px;
     padding: 10px;
 }
 .song-ctrl-pannel{
-    width: 1000px;
+    width: 800px;
     text-align: center;
 }
 .song-action-pannel ul{ /*Serve per non far sbordare il Play in Hover*/
@@ -409,7 +404,6 @@ margin-bottom: 5px;
 }
 /*Pannelo Di Controllo Utente*/
 .user-ctrl-pannel{
-    width: 200px;
 }
 .user-action-pannel ul li{
     padding-right: 10px;
@@ -478,7 +472,10 @@ margin-bottom: 5px;
     .made-for-you-content-box, .popular-artist-content-box{
     width: calc( 100% / 2);
     }
-    /*Side Nav*/
+    /*FOOTER*/
+    .song-save{
+        padding-left: 0px;
+    }
     .song-save-buttons a{
         display: block;
     }
@@ -523,10 +520,13 @@ margin-bottom: 5px;
     .upgrade-container{
         width: calc( 100% - 50px );
     }
+    /*FOOTER*/
+    .song-save{
+        padding-left: 20px;
+    }
     .song-save-buttons a{
         display: block;
     }
-
 }
 
 /*Hidden After XS*/
