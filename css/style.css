@@ -38,8 +38,8 @@
 .main-section-container{
     margin: 20px 0;
 }
-.inner-wrapper{
-    padding: 10px 5px;
+nav .inner-wrapper{
+    padding: 5px 20px;
 }
 .inline-block{
     display: inline-block;
@@ -66,6 +66,9 @@ h3{
 }
 h4{
     color: white;
+}
+.padding-left{
+    padding-left: 20px;
 }
 
 
@@ -103,34 +106,36 @@ main li{
     padding: 10px 10px;
     height: 100%;
 }
-.logo img{
+nav .logo img{
     width: 80%;
 }
-.padding-left{
-    padding-left: 5px;
+nav .padding-left{
+    padding-left: 20px;
 }
-.menu svg{
+nav .menu svg{
     width: 25px;
     vertical-align: middle;
 }
 .menu svg path{
     fill: #707377;
 }
-.playlist{
+nav .playlist{
     height: 100%;
     min-height: 100px;
     overflow: hidden;
     min-height: 55px;
-    padding-top: 20px;
 }
-.new-playlist{
+nav .new-playlist{
     height: 70px;
 }
-.scroll-list{
+nav .scroll-list{
     height: calc( 100% - 70px );
     overflow-y: auto;
 }
-.plus{
+nav .plus-container{
+    padding-top: 5px;
+}
+nav .plus{
     font-size: 40px;
     vertical-align: middle;
     padding-right: 5px;
@@ -139,7 +144,7 @@ main li{
     content: "";
     display: block;
     border: 1px solid #4d4d4d;
-    margin: 10px 0;
+    margin: 5px 0;
 }
 .user-icon-container{
     height: 25px;
@@ -150,7 +155,7 @@ main li{
     background-color: #808080;
     margin-right: 5px;
 }
-.user-img{
+nav .user-img{
     width: 100%;
     height: 100%;
 }
@@ -168,6 +173,9 @@ nav a:hover{
     height: 25px;
     display: inline-block;
     vertical-align: middle;
+}
+#green-border-left a{
+    padding-left: 15px;
 }
 /*Main Container*/
 .main-content-container{
@@ -225,9 +233,6 @@ nav a:hover{
     height: 100%;
 }
 /*Main Menu*/
-.main-menu-container{
-margin-bottom: 5px;
-}
 .container-main-menu-flex-row{
     display: flex;
     justify-content: space-around;
@@ -283,7 +288,7 @@ margin-bottom: 5px;
 }
 .album-name h4{
     font-size: 15px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 }
 .artist-name a{
     color: #707377;
