@@ -346,8 +346,8 @@ nav a:hover{
     color: white;
 }
 /*Like e Salva*/
-.song-save{
-    padding-left: 20px;
+.song-save-buttons a{
+    padding: 5px 5px;
 }
 /*Hover Bottoni*/
 .song-save-buttons a:hover{
